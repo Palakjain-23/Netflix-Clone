@@ -1,6 +1,6 @@
 const Login=()=>{
-    return (
-        <div>palak</div>
+    return(
+        <div></div>
     )
 }
 export default Login;

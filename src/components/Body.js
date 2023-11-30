@@ -1,5 +1,6 @@
-import Login from "./Login";
+
 import Browse from "./Browse";
+import Login from "./Login";
 const Body=()=>{
   return(
 <div>
