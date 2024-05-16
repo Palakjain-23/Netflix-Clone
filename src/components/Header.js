@@ -52,7 +52,7 @@ const Header=()=>{
     handleClose(); // Close the menu
   };
   return (
-    <div className="absolute px-10 bg-gradient-to-b from-black z-10 flex w-screen">
+    <div className="absolute px-10 bg-gradient-to-b from-black z-10 flex w-screen overflow-hidden">
     <div className="w-2/12 mr-8 flex items-center">
       <img src="logo.png" className="h-40" alt="logo" />
     </div>

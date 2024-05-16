@@ -3,11 +3,9 @@ import Header from "./Header";
 import { auth } from "../Utils/firebase";
 import { checkValidate } from "../Utils/validate";
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
     const email = useRef(null);
-    const  navigate=useNavigate();
     const password = useRef(null);
     const [isSignedIn, setIsSignedIn] = useState();
     const [errorMessage, setErrorMessage] = useState();
@@ -79,7 +77,7 @@ const SignIn = () => {
                     {errorMessage}
                 </p>
 
-                <button className="p-2 my-4 bg-red-700 w-full" onClick={handleButtonClick}>
+                <button className="p-2 my-4 bg-red-700 w-full hover:bg-red-500" onClick={handleButtonClick}>
                     {isSignedIn ? "Sign In" : "Sign Up"}
                 </button>
                 <p className="py-4 text-white" onClick={toggleSignUp}>
